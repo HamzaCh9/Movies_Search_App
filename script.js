@@ -79,12 +79,23 @@ function generateRandomPage() {
     return Math.floor(Math.random() * 100) + 1;
   }
   
+// // Initial page load
+// window.addEventListener('load', () => {
+//     clearMainSection();
+
+//     const randomPage = generateRandomPage();
+//     const popularMoviesUrl = `https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=${API_KEY}&page=${randomPage}`;
+//     returnMovies(popularMoviesUrl);
+
+
+//     // returnMovies(APILINK);
+//   });
 // Initial page load
 window.addEventListener('load', () => {
     clearMainSection();
 
     const randomPage = generateRandomPage();
-    const popularMoviesUrl = `https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=${API_KEY}&page=${randomPage}`;
+    const popularMoviesUrl = `https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=${API_KEY}&page=2`;
     returnMovies(popularMoviesUrl);
 
 
