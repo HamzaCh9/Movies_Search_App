@@ -91,13 +91,15 @@ function generateRandomPage() {
 //     // returnMovies(APILINK);
 //   });
 // Initial page load
-window.addEventListener('load', () => {
-    clearMainSection();
-
-    const randomPage = generateRandomPage();
-    const popularMoviesUrl = `https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=${API_KEY}&page=3`;
-    returnMovies(popularMoviesUrl);
 
 
-    // returnMovies(APILINK);
-  });
+// window.addEventListener('load', () => {
+//     clearMainSection();
+
+//     const randomPage = generateRandomPage();
+//     const popularMoviesUrl = `https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=${API_KEY}&page=3`;
+//     returnMovies(popularMoviesUrl);
+
+
+//     // returnMovies(APILINK);
+//   });
