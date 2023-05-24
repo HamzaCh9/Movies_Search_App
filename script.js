@@ -79,27 +79,27 @@ function generateRandomPage() {
     return Math.floor(Math.random() * 100) + 1;
   }
   
-// // Initial page load
-// window.addEventListener('load', () => {
-//     clearMainSection();
+// Initial page load
+window.addEventListener('load', () => {
+    clearMainSection();
 
-//     const randomPage = generateRandomPage();
-//     const popularMoviesUrl = `https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=${API_KEY}&page=${randomPage}`;
-//     returnMovies(popularMoviesUrl);
+    const randomPage = generateRandomPage();
+    const popularMoviesUrl = `https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=${API_KEY}&page=${randomPage}`;
+    returnMovies(popularMoviesUrl);
 
 
-//     // returnMovies(APILINK);
-//   });
+    // returnMovies(APILINK);
+  });
 // Initial page load
 
 
- window.addEventListener('load', () => {
-     clearMainSection();
+//  window.addEventListener('load', () => {
+//      clearMainSection();
 
-     const randomPage = generateRandomPage();
-     const popularMoviesUrl = `https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=${API_KEY}&page=3`;
-     returnMovies(popularMoviesUrl);
+//      const randomPage = generateRandomPage();
+//      const popularMoviesUrl = `https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=${API_KEY}&page=3`;
+//      returnMovies(popularMoviesUrl);
 
 
-     // returnMovies(APILINK);
-   });
+//      // returnMovies(APILINK);
+//    });
